@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--
+    * Imports/links para css,script e a fonte do google Inter.
+    -->
+    <link rel="stylesheet" href="desafio8.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <script src="desafio8.js"></script>
+
+    <title>Desafio Javascript</title>
+</head>
+
+<body>
+    <div class="body">
+        <!--
+        * Cabeçário da página
+        -->
+        <header>
+            <div class="titulo">
+                <h1>Desafio javascript</h1>
+            </div>
+        </header>
+        <!--
+        * Conteúdo da página
+        -->
+        <div class="content">
+            <div class="desafioConteudo">
+                <a class="botaoVoltar" href="../index.html">Voltar</a>
+                <h2>Contexto:</h2>
+                <p>Agrupamento de faturas Pendentes</p>
+                <p>Dado um array de objetos com faturas pendentes:</p>
+                <p>
+                    [<br>
+                    { clienteId: 1, valor: 120 },<br>
+                    { clienteId: 2, valor: 150 },<br>
+                    { clienteId: 1, valor: 130 },<br>
+                    { clienteId: 3, valor: 200 }<br>
+                    ]
+
+                </p>
+                <p><b>Escreva uma função que <b>agrupa</b> as faturas pelo clienteId , somando os valores
+                        pendentes.
+                    </b></p>
+                <div class="linhaPreta"></div>
+                <div class="desafioInput">
+                    <label>Digite o ID do Cliente:</label>
+                    <input type="number" id="input-cliente-id" placeholder="Id do cliente">
+                    <label>Valor da fatura</label>
+                    <input type="number" id="input-fatura" placeholder="Fatura">
+                    <button onclick="mostrarCliente()">Listar cliente</button>
+                    <button class="agruparCliente" onclick="agruparCliente()">Agrupar cliente</button>
+                    <div id="tabela">
+                        <table id="tabelaCliente">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        ClienteID
+                                    </th>
+                                    <th>
+                                        Valor da fatura R$
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

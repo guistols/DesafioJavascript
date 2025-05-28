@@ -12,12 +12,12 @@ function calculoTarifa(consumoTotal){
     * Caso o consumoTotal seja até 500kWh
     */
     }else if(consumoTotal<=500){
-        tarifa = (100*0.50) + (consumoTotal*0.75)
+        tarifa = (100*0.50) + ((consumoTotal-100)*0.75)
     /*
     * Caso o consumoTotal seja acima de 500kWh
     */
     }else{
-        tarifa = (100*0.50) + (500*0.75) + (consumoTotal*1.00)
+        tarifa = (100*0.50) + (400*0.75) + ((consumoTotal-500)*1.00)
     }
     /*
     * Retorna o valor final da tarifa
