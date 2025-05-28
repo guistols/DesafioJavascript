@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--
+    * Imports/links para css,script e a fonte do google Inter.
+    -->
+    <link rel="stylesheet" href="desafio7.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <script src="desafio7.js"></script>
+
+    <title>Desafio Javascript</title>
+</head>
+
+<body>
+    <div class="body">
+        <!--
+        * Cabeçário da página
+        -->
+        <header>
+            <div class="titulo">
+                <h1>Desafio javascript</h1>
+            </div>
+        </header>
+        <!--
+        * Conteúdo da página
+        -->
+        <div class="content">
+            <div class="desafioConteudo">
+                <a class="botaoVoltar" href="../index.html">Voltar</a>
+                <h2>Contexto:</h2>
+                <p>Cálculo de multa por atraso</p>
+                <p>Escreva uma função que receba:</p>
+                <ul>
+                    <li>
+                        o valor da fatura (em reais)
+                    </li>
+                    <li>
+                        a data de vencimento (string no formato YYYY-MM-DD)
+                    </li>
+                    <li>
+                        a data do pagamento (string no formato YYYY-MM-DD)
+                    </li>
+                </ul>
+                <p>E calcule:</p>
+                <ul>
+                    <li>Se o pagamento for após o vencimento, aplique <b>2% de multa + 0,033% ao dia</b> de
+                        atraso.</li>
+                    <li>
+                        Caso contrário, o valor da fatura não é alterado.
+
+                    </li>
+                </ul>
+                <div class="linhaPreta"></div>
+                <div class="desafioInput">
+                    <label>Valor da fatura R$: </label>
+                    <input type="text" id="input-valor-fatura" placeholder="Digite o valor da fatura em reais (R$)">
+                    <label>Data de vencimento:</label>
+                    <input type="date" id="input-data-vencimento" placeholder="Data de vencimento">
+                    <label>Data de pagamento:</label>
+                    <input type="date" id="input-data-pagamento">
+                    <button onclick="gerarMulta()">Gerar Multa</button>
+                    <div id="resultado"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--
+    * Imports/links para css,script e a fonte do google Inter.
+    -->
+    <link rel="stylesheet" href="desafio5.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <script src="desafio5.js"></script>
+
+    <title>Desafio Javascript</title>
+</head>
+
+<body>
+    <div class="body">
+        <!--
+        * Cabeçário da página
+        -->
+        <header>
+            <div class="titulo">
+                <h1>Desafio javascript</h1>
+            </div>
+        </header>
+        <!--
+        * Conteúdo da página
+        -->
+        <div class="content">
+            <div class="desafioConteudo">
+                <a class="botaoVoltar" href="../index.html">Voltar</a>
+                <h2>Contexto:</h2>
+                <p>Simulação de tarifação</p>
+                <p>Suponha que a empresa de energia aplique a seguinte tarifa:</p>
+                <ul>
+                    <li>
+                        Para os <b>primeiros 100 kWh</b>: R$ 0,50 por kWh.
+                    </li>
+                    <li>
+                       De <b>101 a 500 kWh</b>: R$ 0,75 por kWh
+                    </li>
+                    <li>
+                        Acima de <b>500 kWh</b>: R$ 1,00 por kWh
+                    </li>
+                </ul>
+                <p><b>Escreva uma função que, dado um consumo total (em kWh), calcule e retorne o valor total da fatura.</b></p>
+                <div class="linhaPreta"></div>
+                <div class="desafioInput">
+                    <label>Digite o consumo total em kWh: </label>
+                    <input type="text" id="input-consumo-total" placeholder="Digite o consumo em kWh">
+                    <button onclick="calcularConsumoTotal()">Calcular valor total</button>
+                    <div id="resultado"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

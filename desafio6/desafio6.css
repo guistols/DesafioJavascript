@@ -1,0 +1,103 @@
+/* 
+*  Header
+*/
+body{
+    display: flex;
+    margin: 0;
+}
+.body{
+   width: 100%;
+}
+.titulo{
+    display: flex;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    justify-content: center;
+    font-family: "Inter",sans-serif;
+}
+/*
+* Conteúdo principal
+*/
+.content{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+/*
+* Div DESAFIO CONTEUDO
+*/
+.desafioConteudo{
+    display: flex;
+    width: 80%;
+    font-size: 22px;
+    font-family: "Inter",sans-serif;
+    flex-direction: column;
+}
+.desafioConteudo .botaoVoltar{
+    background-color: rgb(255, 101, 101);
+    width: 10%;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+}
+.desafioConteudo .botaoVoltar:hover{
+    background-color: rgb(211, 85, 85);
+    width: 10%;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+}
+.linhaPreta{
+    border: 1px;
+    width: 80%;
+    height: 2px;
+    background-color: black;
+}
+
+/*
+* Div DESAFIO INPUT
+*/
+.desafioInput{
+    display: flex;
+    margin-top: 30px;
+    width: 80%;
+    font-size: 20px;
+    font-family: "Inter",sans-serif;
+    flex-direction: column;
+}
+.desafioInput input{
+    font-family: "Inter",sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 40%;
+    padding: 10px;
+}
+.desafioInput button{
+    border: 0;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: rgb(83, 206, 255);
+    padding:5px;
+    font-family: "Inter",sans-serif;
+    width: 25%;
+    margin-bottom: 30px;
+}
+.desafioInput button:hover{
+    border: 0;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: rgb(68, 170, 211);
+    padding:5px;
+    font-family: "Inter",sans-serif;
+    width: 25%;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
