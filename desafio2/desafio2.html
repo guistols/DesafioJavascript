@@ -8,13 +8,13 @@
     <!--
     * Imports/links para css,script e a fonte do google Inter.
     -->
-    <link rel="stylesheet" href="desafio1.css">
+    <link rel="stylesheet" href="desafio2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
-    <script src="desafio1.js"></script>
+    <script src="desafio2.js"></script>
     
         <title>Desafio Javascript</title>
 </head>
@@ -36,26 +36,22 @@
             <div class="desafioConteudo">
                 <a class="botaoVoltar" href="/index.html">Voltar</a>
                 <h2>Contexto:</h2>
-                <p>Processamento de Leituras de energia</p>
-                <p>Você recebe um array com leituras diárias de energia (em kWh). O array contém valores positivos ou
-                    nulos.</p>
+                <p>Detecção de pico de consumo</p>
+                <p>Dado um array com medições de consumo horário ao longo de um dia,</p>
                 <p><b>Escreva uma função que:</b></p>
                 <ul>
                     <li>
-                        Remova todas as leituras que são 0.
+                        Identifique a maior sequência contínua de horas em que o consumo foi <b>acima de 300kWh.</b>
                     </li>
                     <li>
-                        Calcule a <b>média</b> das leituras restantes.
-                    </li>
-                    <li>
-                        Retorne o valor da média, com até 2 casas decimais.
+                       Retorne o comprimento dessa sequência.
                     </li>
                 </ul>
                 <div class="linhaPreta"></div>
                 <div class="desafioInput">
-                    <label>Informe as quantidades de energia (kWh)</label>
-                    <input type="text" id="input-energia" placeholder="Exemplo: 120, 0, 110, 80, 90, 0">
-                    <button onclick="inputEnergia()">Calcular</button>
+                    <label>Informe as quantidades de energia consumida diariamente em (kWh)</label>
+                    <input type="text" id="input-consumo" placeholder="Exemplo: 100, 320, 340, 290, 310, 305, 250">
+                    <button onclick="calcularConsumo()">Calcular</button>
                     <div id="resultado"></div>       
                 </div>
             </div>
