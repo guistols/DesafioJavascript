@@ -56,8 +56,10 @@
                     <input type="number" id="input-cliente-id" placeholder="Id do cliente">
                     <label>Valor da fatura</label>
                     <input type="number" id="input-fatura" placeholder="Fatura">
-                    <button onclick="mostrarCliente()">Listar cliente</button>
-                    <button class="agruparCliente" onclick="agruparCliente()">Agrupar cliente</button>
+                    <div class="botoes">
+                        <button onclick="mostrarCliente()">Inserir cliente</button>
+                        <button class="agruparCliente" onclick="agruparCliente()">Agrupar cliente</button>
+                    </div>
                     <div id="tabela">
                         <table id="tabelaCliente">
                             <thead>
@@ -71,7 +73,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                
+
                             </tbody>
                         </table>
                     </div>

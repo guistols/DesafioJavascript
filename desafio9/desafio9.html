@@ -47,9 +47,11 @@
                 <div class="linhaPreta"></div>
                 <div class="desafioInput">
                     <label>Valor da transação via PIX</label>
-                    <input type="text" id="input-pix" placeholder="Digite o valor da transação">
-                    <button onclick="adicionarValor()">Adicionar valor</button>
-                    <button class="calcularTotal" onclick="calcularTotal()">Calcular total</button>
+                    <input type="number" id="input-pix" placeholder="Digite o valor da transação">
+                    <div class="botoes">
+                        <button onclick="adicionarValor()">Adicionar valor</button>
+                        <button class="calcularTotal" onclick="calcularTotal()">Calcular total</button>
+                    </div>
                     <div id="resultado"></div>
                 </div>
             </div>

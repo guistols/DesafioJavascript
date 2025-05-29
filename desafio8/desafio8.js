@@ -18,26 +18,7 @@ function mostrarCliente() {
     alert("Cliente adicionado com sucesso")
 
     atualizarTabela(clientes);
-    //Momento onde ocorre o agrupamento, caso tente adicionar um registro com o mesmo ID
-    const agrupar = {};
-
-    for (const cliente of clientes) {
-        const id = cliente.clienteId;
-        const valor = cliente.valorFatura;
-
-        if (!agrupar[id]) {
-            agrupar[id] = 0;
-        }
-
-        agrupar[id] += valor;
-    }
-    const listaAgrupada = Object.entries(agrupar).map(([clienteId, valorFatura]) => ({
-        clienteId: Number(clienteId),
-        valorFatura: valorFatura
-    }));
-
-    atualizarTabela(listaAgrupada);
-
+    
     document.getElementById("input-cliente-id").value = "";
     document.getElementById("input-fatura").value = "";
 }

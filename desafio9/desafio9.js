@@ -24,4 +24,6 @@ function calcularTotal(){
 
     const resultado = document.getElementById("resultado")
     resultado.innerHTML= `Total arrecadado: ${somaTotal.toFixed(2)}<br>Quantidade de transações: ${qtdTransacoes}`
+
+    valoresPix.length = 0;
 }
